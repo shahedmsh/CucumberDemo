@@ -1,0 +1,14 @@
+
+@tag @tag1
+Scenario: SignUp Error Message Testing                               # src/test/resources/features/SignUp.feature:5
+  Given Open the Application                                         # stepDefinations.SignUpPage_Steps.open_the_application()
+  And Redirct to the SignUp page                                     # stepDefinations.SignUpPage_Steps.redirct_to_the_sign_up_page()
+  When Click on the create account button without entring the values # stepDefinations.SignUpPage_Steps.click_on_the_create_account_button_without_entring_the_values()
+  Then Get the error message                                         # stepDefinations.SignUpPage_Steps.get_the_error_message()
+
+@tag @tag2
+Scenario: SignUp Error Message Testing                            # src/test/resources/features/SignUp.feature:12
+  Given Open the Application                                      # stepDefinations.SignUpPage_Steps.open_the_application()
+  And Redirct to the SignUp page                                  # stepDefinations.SignUpPage_Steps.redirct_to_the_sign_up_page()
+  When Click on the create account button with valid email values # stepDefinations.Class2.click_on_the_create_account_button_with_valid_email_values()
+  Then Get the error message                                      # stepDefinations.SignUpPage_Steps.get_the_error_message()
